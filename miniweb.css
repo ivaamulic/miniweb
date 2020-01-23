@@ -1,0 +1,36 @@
+body {background-color:darkred;}
+img{width:100%;
+    display: block;}
+
+figure{width:900px;
+       position:relative;
+       margin:auto;
+       border: 22px solid black;
+    overflow: hidden;
+}
+figcaption {width:100%;
+            height:530px;
+  border: 3px solid black_;
+  position: absolute; 
+  background-color:	rgba(139,0,0,1);
+/*
+  transition: .7s;
+  opacity:0;
+*/
+  color:black;
+  padding-top: 70px;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  font-style:normal;
+  text-align: center;
+  animation: miniweb 3s 2s;
+  animation-fill-mode:both
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+@keyframes miniweb {
+    from {top: -630px}
+    to {top: 0}
+}
